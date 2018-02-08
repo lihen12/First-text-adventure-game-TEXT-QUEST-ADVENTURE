@@ -86,6 +86,7 @@ function textQuest() {
       if(userX == treasureX && userY == treasureY) {
         treasureFound = true;
         console.log("FOUND IT");
+        alert("FOUND IT!");
       }
   }
 }
