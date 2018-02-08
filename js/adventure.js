@@ -14,7 +14,6 @@ var treasureY = Math.floor((Math.random() * 2) + 1);
 var treasureFound = false;
 
 // Get user's name, document and change html class with user's name
-
 function myUserName() {
   var name = prompt("Welcome brave adventurer! What is your name?");
   var inputName = document.getElementsByClassName("userName");
@@ -24,7 +23,7 @@ function myUserName() {
 // function that starts game with prompt
 function textQuest() {
   while(!treasureFound) {
-    var direction = prompt("Which direction would you like to go in? (north, south, east, west)");
+    var direction = prompt("Which direction would you like to go in? (north, south, east, west)\n" + "Current Pos: " + "(" + userX + ", " + userY + ")");
 
     console.log(direction);
 
